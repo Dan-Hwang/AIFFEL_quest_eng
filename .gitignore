@@ -1,27 +1,27 @@
+# OS / editor
+nul
+
+# Python local files
 .venv/
-.venv312/
-.github/
+venv/
 __pycache__/
 .ipynb_checkpoints/
-scripts/
 
-# Local data and generated model artifacts
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Local datasets and generated training artifacts
 **/data/
-**/models/
 **/work/
+**/checkpoint-*/
 *_corpus.txt
 *_spm.model
 *_spm.vocab
 *.pt
 *.pth
-*.ckpt
 *.bin
 *.safetensors
-*.memmap
-*.npy
-*.npz
 *.jsonl
-
-# Windows accidental file
-nul
-scripts/
